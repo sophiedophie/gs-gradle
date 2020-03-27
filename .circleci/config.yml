@@ -16,7 +16,7 @@ jobs:
             echo 'export FIREBASE_TOKEN="${FIREBASE_TOKEN}"' >> $BASH_ENV
       - run:
           name: Try Gradlew
-          command: ./complete/gradlew dependencies
+          command: ./complete/gradlew
 
 workflows:
   start_build:
