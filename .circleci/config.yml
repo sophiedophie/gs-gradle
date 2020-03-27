@@ -4,8 +4,6 @@ jobs:
   build:
     docker:
       - image: circleci/android:api-29
-    environment:
-      - GRADLE_OPTS: -PdisablePreDex -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true clean patient:appDistributionUploadInternalRelease --no-daemon --max-workers 3
     resource_class: large
     steps:
       - checkout:
