@@ -8,7 +8,8 @@ jobs:
       - GRADLE_OPTS: -PdisablePreDex -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true clean patient:appDistributionUploadInternalRelease --no-daemon --max-workers 3
     resource_class: large
     steps:
-      - checkout
+      - checkout:
+          path: ~/project
       - run:
           name: Set environment variable to export
           command: |
