@@ -9,7 +9,7 @@ jobs:
     resource_class: large
     steps:
       - checkout:
-          path: ~/project
+          path: ~/project/complete
       - run:
           name: Set environment variable to export
           command: |
