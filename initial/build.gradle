@@ -1,6 +1,7 @@
 apply plugin: 'java'
 
-task sophie_test {
-    def buildNumber = System.getenv("TEST_VAR");
-    println buildNumber
+task('sophie_test') {
+    doLast {
+        println System.getenv("TEST_VAR")
+    }
 }
