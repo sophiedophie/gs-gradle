@@ -28,7 +28,7 @@ dependencies {
     println buildNumber
 }
 
-task sophie_test {
+task sophie_test() {
     def buildNumber = System.getenv("TEST_VAR");
     println buildNumber
 }
