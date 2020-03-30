@@ -14,7 +14,7 @@ jobs:
             echo 'export TEST_VAR=<< pipeline.number >>' >> $BASH_ENV
       - run:
           name: Try Gradlew
-          command: ./complete/gradlew -all
+          command: ./complete/gradlew tasks
 
 workflows:
   start_build:
